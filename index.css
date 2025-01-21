@@ -48,7 +48,7 @@ body {
     flex-direction: column;
     gap: 1rem;
     width: 100%;
-    padding: 2rem 2rem 1.5rem;
+    padding: 2rem 2.3rem 1.5rem;
 }
 
 .details > h3 {
@@ -60,7 +60,7 @@ body {
 .details > p {
     color: var(--Desaturated-Dark-Blue);
     font-weight: 500;
-    font-size: 0.87rem;
+    font-size: 0.84rem;
 }
 
 
@@ -79,12 +79,6 @@ body {
     align-items: center;
 }
 
-.profile-info {
-    display: flex;
-    flex-direction: column;
-}
-
-
 .profile-pic {
     width: 40px;
     height: 40px;
@@ -92,7 +86,31 @@ body {
 }
 
 
-#share-button {
-    width: 6%;
-    height: 6%;
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
 }
+
+.profile-info > h4:nth-of-type(1){
+    color: var(--Very-Dark-Grayish-Blue);
+    font-size: 0.85rem;
+}
+
+.profile-info > h4:nth-of-type(2) {
+    color: var(--Grayish-Blue);
+    font-weight: 400;
+    font-size: 0.85rem;
+}
+
+#share-button {
+    cursor: pointer;
+    
+}
+
+/* Will be used for dom manipulation */
+.hidden {
+    display: none;
+}
+
+
