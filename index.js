@@ -3,6 +3,7 @@ const profile = document.querySelector(".writer-profile");
 const socials = document.querySelector(".socials");
 
 const iconContainer = document.querySelector(".share-container");
+const sharePop = document.querySelector(".share-popup");
 const iconPath = document.querySelector(".iconer path");
 
 
@@ -23,9 +24,12 @@ iconContainer.addEventListener("click", () => {
     } else if (iconPath.getAttribute("fill") === "#6E8098" && window.innerWidth > 1024) {
         iconContainer.style.backgroundColor = "var(--Very-Dark-Grayish-Blue)";
         iconPath.setAttribute("fill", "var(--Light-Grayish-Blue)");
+        sharePop.classList.remove("hidden")
     } else {
         iconPath.setAttribute("fill", "#6E8098");
         iconContainer.style.backgroundColor = "var(--Light-Grayish-Blue)";
+        sharePop.classList.add("hidden")
+
 
     }
 });

@@ -71,7 +71,7 @@ body {
     align-items: center;
     padding: 1rem 2rem 1rem;
     border-radius: 0 0 10px 10px;
-    transition: 0.3s ease;
+    transition: 0.1s ease;
 }
 
 .writer-profile {
@@ -84,7 +84,7 @@ body {
     display: flex;
     gap: 1rem;
     align-items: center;
-    transition: 0.3s ease;
+    transition: 0.1s ease;
     
 }
 
@@ -120,6 +120,7 @@ body {
 }
 
 .share-container {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,6 +130,47 @@ body {
     height: 35px;
     background-color: var(--Light-Grayish-Blue);
     cursor: pointer;
+    transition: 0.1s ease-in;
+}
+
+/* This is the popup for the desktop mode */
+.share-popup {
+    display: flex;
+    background-color: var(--Very-Dark-Grayish-Blue);
+    gap: 1rem;
+    align-items: center;
+    border-radius: 10px;
+    position: absolute;
+    left: 75%;
+    bottom: 90%;
+    transform: translate(-54%, -50%);
+    padding: 1rem 2.2rem 1rem;
+    transition: 0.3s ease-in;
+}
+
+.share-popup::after {
+    content: "";
+    position: absolute;
+    bottom: -14px; /* Position the pointer below the popup */
+    left: 45%;
+    transform: translateX(-50%);
+    border-bottom: 15px solid var(--Very-Dark-Grayish-Blue);
+    border-left: 13px solid rgba(0, 0, 0, 0);
+    border-right: 13px solid rgba(0, 0, 0, 0);
+    display: inline-block;
+    height: 0;
+    vertical-align: top;
+    width: 0;
+    transform: rotate(180deg);
+
+  }
+
+.share-popup > h4 {
+    font-size: 0.85rem;
+    color: var(--Grayish-Blue);
+    font-weight: 500;
+    letter-spacing: 0.3rem;
+    
 }
 
 /* Will be used for dom manipulation */
