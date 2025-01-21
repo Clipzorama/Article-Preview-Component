@@ -17,6 +17,7 @@
 }
 
 
+
 body {
     font-family: "Manrope", serif;
     min-height: 100vh;
@@ -24,7 +25,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 13px;
 }
 
 .main-container {
@@ -137,3 +137,45 @@ body {
 }
 
 
+@media (min-width:1024px) {
+    .main-container {
+        width: 50%;
+        flex-direction: row;
+    }
+
+    .image-container {
+        width: 40%;
+    }
+
+    .main-pic {
+        height: 100%;
+        object-fit: fill;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .pc-transition {
+        width: 60%;
+    }
+
+    .details {
+        padding: 2rem 2.3rem 1rem;
+    }
+
+    .details > h3 {
+        font-size: 1.3rem;
+    }
+
+
+
+    .writer {
+    padding: 0 1.5rem 1.5rem 2rem;
+
+    }
+
+ 
+
+
+
+
+    
+}
